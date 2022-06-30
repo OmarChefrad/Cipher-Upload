@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShareWU</title>
+  </head>
+  <body>
+    <form
+      action="/upload"
+      method="post"
+      style="
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: auto;
+        max-width: 500px;
+        margin: 0 auto;
+      "
+      enctype="multipart/form-data"
+    >
+      <label for="file" style="font-weight: bold">File</label>
+      <input type="file" name="file" id="file" required />
+      <label for="password" style="font-weight: bold">Password</label>
+      <input type="password" name="password" id="password" />
+      <button type="submit">Share</button>
+    </form>
+  </body>
+</html>
